@@ -31,8 +31,10 @@ function validate_form() {
     age.onblur = function () {
         if (/\D/.test(age.value)) {
             console.log("Bad age!!!");
+            age.style.border = "1px solid red";
         } else {
             console.log(" Age - OK!!!");
+            age.style.border = "none";
         }
     };
 
@@ -41,16 +43,20 @@ function validate_form() {
 
         if (str == 'user_' && username.value.length > 5) {
             console.log('Username - OK');
+            username.style.border = "none";
         } else {
             console.log('Username BAD');
+            username.style.border = "1px solid red";
         }
     };
 
     date.onblur = function () {
         if (/\d{1,2}.\d{1,2}.\d{4}/.test(date.value)) {
             console.log('Date - OK!');
+            date.style.border = "none";
         } else {
             console.log('your data is invalid');
+            date.style.border = "1px solid red";
         }
     };
 };
