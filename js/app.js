@@ -14,7 +14,7 @@ username.setAttribute('value',"user_");
 
 var date = document.createElement("input");
 date.setAttribute('name', "date");
-date.setAttribute('type',"text");
+date.setAttribute('type',"date");
 date.setAttribute('placeholder',"dd.mm.yyyy");
 
 var submit = document.createElement("input");
